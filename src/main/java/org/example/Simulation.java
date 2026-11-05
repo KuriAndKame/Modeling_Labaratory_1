@@ -57,7 +57,4 @@ public class Simulation {
         return this.particle;
     }
 
-    public SimulationParametrs getParams() {
-        return this.params;
-    }
 }

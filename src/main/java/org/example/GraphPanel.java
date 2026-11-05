@@ -15,7 +15,6 @@ import javax.swing.JPanel;
 public class GraphPanel extends JPanel {
     private Particle particle;
     private final List<double[]> trajectory = new ArrayList<>();
-    private double scale = 1.0E8;
 
     public GraphPanel() {
         setBackground(Color.WHITE);
@@ -29,6 +28,8 @@ public class GraphPanel extends JPanel {
 
         try {
             graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+            double scale = 1.0E8;
 
             int width = getWidth();
             int height = getHeight();
