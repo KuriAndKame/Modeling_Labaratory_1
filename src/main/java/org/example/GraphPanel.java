@@ -15,6 +15,7 @@ import javax.swing.JPanel;
 public class GraphPanel extends JPanel {
     private Particle particle;
     private final List<double[]> trajectory = new ArrayList<>();
+    private final double SCALE_PARAM = 0.20;
 
     public GraphPanel() {
         setBackground(Color.WHITE);
@@ -46,8 +47,8 @@ public class GraphPanel extends JPanel {
             }
 
             if (maxX > 0 || maxY > 0) {
-                double scaleX = maxX > 0 ? width * 0.33 / maxX : Double.POSITIVE_INFINITY;
-                double scaleY = maxY > 0 ? width * 0.33 / maxY : Double.POSITIVE_INFINITY;
+                double scaleX = maxX > 0 ? width * SCALE_PARAM / maxX : Double.POSITIVE_INFINITY;
+                double scaleY = maxY > 0 ? width * SCALE_PARAM / maxY : Double.POSITIVE_INFINITY;
 
                 scale = Math.min(scaleX, scaleY);
             } else {

@@ -52,9 +52,9 @@ public class SimulationUI {
 
         fieldMass = createField("1.0");
         fieldCharge = createField("1.0");
-        fieldMagnit = createField("1.0");
-        fieldElectricField = createField("0.0");
-        fieldStartVelocity = createField("1.0");
+        fieldMagnit = createField("2.0");
+        fieldElectricField = createField("50000.0");
+        fieldStartVelocity = createField("70000.0");
 
         addInput(panelInput, "Масса:", fieldMass);
         addInput(panelInput, "Заряд:", fieldCharge);
